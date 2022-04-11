@@ -9,19 +9,22 @@ class Program
     public static void Main(string[] args)
     {
         //input
-        int VerticalRadius;
-        int HorizontalRadius;
+        float baseA;
+        float baseB;
+        float height;
 
-        Console.WriteLine("This program finds the area of an ellipse with two radiuses.");
+        Console.WriteLine("This program finds the area of a trapezoid.");
         Console.WriteLine("");
 
-        Console.Write("Enter the horizontal radius(cm): ");
-        HorizontalRadius = Convert.ToInt32(Console.ReadLine());
-        Console.Write("Enter the vertical radius(cm): ");
-        VerticalRadius = Convert.ToInt32(Console.ReadLine());
+        Console.Write("Enter the first base(cm): ");
+        baseA = Convert.ToInt32(Console.ReadLine());
+        Console.Write("Enter the second base(cm): ");
+        baseB = Convert.ToInt32(Console.ReadLine());
+        Console.Write("Enter the height(cm): ");
+        height = Convert.ToInt32(Console.ReadLine());
 
         //process
-        double area = (VerticalRadius * HorizontalRadius) * Math.PI;
+        double area = (baseA + baseB) / 2 * height;
 
         //output
         Console.WriteLine("");
