@@ -28,7 +28,7 @@ class Program
 
         //output
         Console.WriteLine("");
-        Console.WriteLine("The area is: " + area.ToString("0.00") + "cm².");
+        Console.WriteLine("The area is: " + area.ToString("0.00") + " cm².");
 
         Console.WriteLine("\nDone.");
     }
